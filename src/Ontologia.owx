@@ -1,0 +1,824 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/leonardo/ontologies/2025/videogiochi"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/leonardo/ontologies/2025/videogiochi">
+    <Prefix name="" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="steam" IRI="http://www.semanticweb.org/leonardomoro/ontologies/2025/steam#"/>
+    <Declaration>
+        <Class abbreviatedIRI="steam:DataRilascio"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="steam:Genere"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="steam:Giocatore"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="steam:Prezzo"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="steam:Valutazione"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="steam:Videogioco"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="steam:haDataRilascio"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="steam:haGenere"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="steam:haPrezzo"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="steam:haValutazione"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="steam:possiedeGioco"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="steam:costo"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="steam:numeroAchievements"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="steam:rangeUtenti"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="steam:tempoMedioGioco"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="steam:titolo"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="steam:valutazioniNegative"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="steam:valutazioniPositive"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Action"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Adventure"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Casual"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Dota_2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Dreii"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Education"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Indie"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Luca"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Marco"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Michele"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Nicola"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Portal_2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Puzzle"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#RPG"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Racing"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Simulation"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Sink_or_Skim"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Sports"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Strategy"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#WolfWars"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#X_Rebirth"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#molto_negativa"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#molto_positiva"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#negativa"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#positiva"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#prezzo_alto"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#prezzo_basso"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#prezzo_medio"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#2006"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#2007"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#2011"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#2012"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#2013"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#2014"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#2015"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#2016"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#2017"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#2018"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#2019"/>
+    </Declaration>
+    <ClassAssertion>
+        <Class abbreviatedIRI="steam:Genere"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Action"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="steam:Genere"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Adventure"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="steam:Genere"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Casual"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="steam:Videogioco"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Dota_2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="steam:Videogioco"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Dreii"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="steam:Genere"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Education"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="steam:Genere"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Indie"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="steam:Giocatore"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Luca"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="steam:Giocatore"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Marco"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="steam:Giocatore"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Michele"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="steam:Giocatore"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Nicola"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="steam:Videogioco"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Portal_2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="steam:Genere"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Puzzle"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="steam:Genere"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#RPG"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="steam:Genere"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Racing"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="steam:Genere"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Simulation"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="steam:Videogioco"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Sink_or_Skim"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="steam:Genere"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Sports"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="steam:Genere"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Strategy"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="steam:Videogioco"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#WolfWars"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="steam:Videogioco"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#X_Rebirth"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="steam:Valutazione"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#molto_negativa"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="steam:Valutazione"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#molto_positiva"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="steam:Valutazione"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#negativa"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="steam:Valutazione"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#positiva"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="steam:Prezzo"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#prezzo_alto"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="steam:Prezzo"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#prezzo_basso"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="steam:Prezzo"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#prezzo_medio"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="steam:DataRilascio"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#2006"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="steam:DataRilascio"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#2007"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="steam:DataRilascio"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#2011"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="steam:DataRilascio"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#2012"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="steam:DataRilascio"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#2013"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="steam:DataRilascio"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#2014"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="steam:DataRilascio"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#2015"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="steam:DataRilascio"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#2016"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="steam:DataRilascio"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#2017"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="steam:DataRilascio"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#2018"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="steam:DataRilascio"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#2019"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="steam:haDataRilascio"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Dota_2"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#2013"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="steam:haGenere"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Dota_2"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Action"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="steam:haGenere"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Dota_2"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Strategy"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="steam:haPrezzo"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Dota_2"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#prezzo_basso"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="steam:haValutazione"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Dota_2"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#molto_positiva"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="steam:haDataRilascio"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Dreii"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#2016"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="steam:haGenere"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Dreii"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Indie"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="steam:haPrezzo"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Dreii"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#prezzo_basso"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="steam:haValutazione"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Dreii"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#positiva"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="steam:possiedeGioco"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Luca"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Dota_2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="steam:possiedeGioco"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Luca"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Dreii"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="steam:possiedeGioco"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Marco"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Portal_2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="steam:possiedeGioco"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Michele"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Portal_2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="steam:possiedeGioco"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Michele"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#WolfWars"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="steam:possiedeGioco"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Nicola"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#X_Rebirth"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="steam:haDataRilascio"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Portal_2"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#2011"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="steam:haGenere"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Portal_2"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Puzzle"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="steam:haPrezzo"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Portal_2"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#prezzo_basso"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="steam:haValutazione"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Portal_2"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#positiva"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="steam:haDataRilascio"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Sink_or_Skim"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#2018"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="steam:haGenere"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Sink_or_Skim"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Adventure"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="steam:haGenere"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Sink_or_Skim"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Indie"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="steam:haPrezzo"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Sink_or_Skim"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#prezzo_basso"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="steam:haValutazione"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Sink_or_Skim"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#positiva"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="steam:haDataRilascio"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#WolfWars"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#2015"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="steam:haGenere"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#WolfWars"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Casual"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="steam:haGenere"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#WolfWars"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Strategy"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="steam:haPrezzo"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#WolfWars"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#prezzo_basso"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="steam:haValutazione"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#WolfWars"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#positiva"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="steam:haDataRilascio"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#X_Rebirth"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#2013"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="steam:haGenere"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#X_Rebirth"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Action"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="steam:haGenere"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#X_Rebirth"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Simulation"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="steam:haPrezzo"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#X_Rebirth"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#prezzo_medio"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="steam:haValutazione"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#X_Rebirth"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#negativa"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="steam:costo"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Dota_2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="steam:numeroAchievements"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Dota_2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="steam:rangeUtenti"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Dota_2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">200000000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="steam:tempoMedioGioco"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Dota_2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">23944</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="steam:titolo"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Dota_2"/>
+        <Literal>Dota 2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="steam:valutazioniNegative"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Dota_2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">142079</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="steam:valutazioniPositive"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Dota_2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">863507</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="steam:costo"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Dreii"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">4.79</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="steam:numeroAchievements"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Dreii"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">11</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="steam:rangeUtenti"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Dreii"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">20000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="steam:tempoMedioGioco"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Dreii"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="steam:titolo"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Dreii"/>
+        <Literal>Dreii</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="steam:valutazioniNegative"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Dreii"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="steam:valutazioniPositive"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Dreii"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">11</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="steam:costo"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Portal_2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">8.19</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="steam:numeroAchievements"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Portal_2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">50</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="steam:rangeUtenti"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Portal_2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">5000000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="steam:tempoMedioGioco"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Portal_2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">7.5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="steam:titolo"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Portal_2"/>
+        <Literal>Portal 2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="steam:valutazioniNegative"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Portal_2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="steam:valutazioniPositive"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Portal_2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">99</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="steam:costo"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Sink_or_Skim"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">3.99</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="steam:numeroAchievements"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Sink_or_Skim"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="steam:rangeUtenti"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Sink_or_Skim"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">20000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="steam:tempoMedioGioco"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Sink_or_Skim"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="steam:titolo"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Sink_or_Skim"/>
+        <Literal>Sink or Skim</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="steam:valutazioniNegative"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Sink_or_Skim"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="steam:valutazioniNegative"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#Sink_or_Skim"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="steam:costo"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#WolfWars"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">2.89</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="steam:numeroAchievements"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#WolfWars"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="steam:rangeUtenti"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#WolfWars"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">20000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="steam:tempoMedioGioco"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#WolfWars"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="steam:titolo"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#WolfWars"/>
+        <Literal>WolfWars</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="steam:valutazioniNegative"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#WolfWars"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">6</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="steam:valutazioniPositive"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#WolfWars"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">10</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="steam:costo"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#X_Rebirth"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">24.99</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="steam:numeroAchievements"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#X_Rebirth"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">69</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="steam:rangeUtenti"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#X_Rebirth"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">500000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="steam:tempoMedioGioco"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#X_Rebirth"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1744</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="steam:titolo"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#X_Rebirth"/>
+        <Literal>X Rebirth</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="steam:valutazioniNegative"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#X_Rebirth"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2832</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="steam:valutazioniNegative"/>
+        <NamedIndividual IRI="http://www.co-ode.org/ontologies/ont.owl#X_Rebirth"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">4032</Literal>
+    </DataPropertyAssertion>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="steam:haDataRilascio"/>
+        <Class abbreviatedIRI="steam:Videogioco"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="steam:haGenere"/>
+        <Class abbreviatedIRI="steam:Videogioco"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="steam:haPrezzo"/>
+        <Class abbreviatedIRI="steam:Videogioco"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="steam:haValutazione"/>
+        <Class abbreviatedIRI="steam:Videogioco"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="steam:possiedeGioco"/>
+        <Class abbreviatedIRI="steam:Giocatore"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="steam:haDataRilascio"/>
+        <Class abbreviatedIRI="steam:DataRilascio"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="steam:haGenere"/>
+        <Class abbreviatedIRI="steam:Genere"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="steam:haPrezzo"/>
+        <Class abbreviatedIRI="steam:Prezzo"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="steam:haValutazione"/>
+        <Class abbreviatedIRI="steam:Valutazione"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="steam:possiedeGioco"/>
+        <Class abbreviatedIRI="steam:Videogioco"/>
+    </ObjectPropertyRange>
+    <DataPropertyDomain>
+        <DataProperty abbreviatedIRI="steam:costo"/>
+        <Class abbreviatedIRI="steam:Prezzo"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty abbreviatedIRI="steam:numeroAchievements"/>
+        <Class abbreviatedIRI="steam:Videogioco"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty abbreviatedIRI="steam:rangeUtenti"/>
+        <Class abbreviatedIRI="steam:Videogioco"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty abbreviatedIRI="steam:tempoMedioGioco"/>
+        <Class abbreviatedIRI="steam:Videogioco"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty abbreviatedIRI="steam:titolo"/>
+        <Class abbreviatedIRI="steam:Videogioco"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty abbreviatedIRI="steam:valutazioniNegative"/>
+        <Class abbreviatedIRI="steam:Valutazione"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty abbreviatedIRI="steam:valutazioniPositive"/>
+        <Class abbreviatedIRI="steam:Valutazione"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty abbreviatedIRI="steam:costo"/>
+        <Datatype abbreviatedIRI="xsd:decimal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty abbreviatedIRI="steam:numeroAchievements"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty abbreviatedIRI="steam:rangeUtenti"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty abbreviatedIRI="steam:tempoMedioGioco"/>
+        <Datatype abbreviatedIRI="xsd:decimal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty abbreviatedIRI="steam:titolo"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty abbreviatedIRI="steam:valutazioniNegative"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty abbreviatedIRI="steam:valutazioniPositive"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
